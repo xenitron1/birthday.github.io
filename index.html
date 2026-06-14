@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>С Днём Рождения ✨</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="cursor-glow"></div>
+  <canvas id="stars"></canvas>
+
+  <div class="loader" id="loader">
+    <div class="loader-heart">♡</div>
+    <p>Готовлю красоту...</p>
+  </div>
+
+  <nav class="nav">
+    <a href="#top" class="logo">Birthday</a>
+    <button class="burger" id="burger" aria-label="Открыть меню">☰</button>
+    <div class="nav-links" id="navLinks">
+      <a href="#wish">Поздравление</a>
+      <a href="#collage">Коллаж</a>
+      <a href="#timeline">История</a>
+      <a href="#gallery">Фото</a>
+      <a href="#letter">Письмо</a>
+      <a href="#surprise">Сюрприз</a>
+    </div>
+  </nav>
+
+  <header class="hero" id="top">
+    <div class="hero-bg-orb orb-one"></div>
+    <div class="hero-bg-orb orb-two"></div>
+    <div class="hero-bg-orb orb-three"></div>
+
+    <div class="hero-content reveal">
+      <p class="eyebrow">Сегодня особенный день</p>
+      <h1>
+        С Днём Рождения,
+        <span class="script" id="girlName">Красавица</span>
+      </h1>
+      <p class="hero-subtitle">
+        20 лет - это начало самой красивой главы. Пусть этот сайт хранит тёплые моменты,
+        улыбки, воспоминания и всё самое лучшее, что хочется подарить в этот день.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#wish" class="btn primary">Открыть поздравление</a>
+        <a href="#collage" class="btn ghost">Посмотреть коллаж</a>
+      </div>
+
+      <div class="hero-stats">
+        <div>
+          <strong>20</strong>
+          <span>прекрасных лет</span>
+        </div>
+        <div>
+          <strong>∞</strong>
+          <span>поводов улыбаться</span>
+        </div>
+        <div>
+          <strong>100%</strong>
+          <span>магии сегодня</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-polaroids reveal delay-1">
+      <div class="polaroid p1">
+        <div class="photo-placeholder" data-photo="photo1.jpg">
+          <span>Фото 1</span>
+        </div>
+        <p>самая яркая</p>
+      </div>
+      <div class="polaroid p2">
+        <div class="photo-placeholder" data-photo="photo2.jpg">
+          <span>Фото 2</span>
+        </div>
+        <p>самая нежная</p>
+      </div>
+      <div class="polaroid p3">
+        <div class="photo-placeholder" data-photo="photo3.jpg">
+          <span>Фото 3</span>
+        </div>
+        <p>самая любимая</p>
+      </div>
+    </div>
+
+    <a href="#wish" class="scroll-down">листай вниз</a>
+  </header>
+
+  <main>
+    <section class="section wish-section" id="wish">
+      <div class="section-title reveal">
+        <p>Главные слова</p>
+        <h2>Поздравление для неё</h2>
+      </div>
+
+      <div class="wish-card reveal">
+        <div class="wish-shine"></div>
+        <h3>С 20-летием!</h3>
+        <p>
+          Сегодня день, когда мир стал чуточку красивее - потому что в нём появилась ты.
+          Желаю тебе сиять так, как умеешь только ты: уверенно, нежно, по-настоящему.
+        </p>
+        <p>
+          Пусть рядом всегда будут люди, которые ценят твою доброту, поддерживают твои мечты
+          и берегут твою улыбку. Пусть каждый новый день приносит маленькие чудеса,
+          большие победы и моменты, которые хочется запомнить навсегда.
+        </p>
+        <p>
+          Ты заслуживаешь самого тёплого, светлого и прекрасного. Сегодня всё это - для тебя.
+        </p>
+      </div>
+
+      <div class="floating-words reveal delay-1">
+        <span>красота</span>
+        <span>нежность</span>
+        <span>улыбка</span>
+        <span>мечты</span>
+        <span>счастье</span>
+        <span>магия</span>
+      </div>
+    </section>
+
+    <section class="section collage-section" id="collage">
+  <div class="section-title reveal">
+    <p>Место для лучших кадров</p>
+    <h2>Большой фотоколлаж</h2>
+  </div>
+
+  <div class="phone-slider reveal">
+    <button class="phone-slider-arrow phone-prev" id="collagePrev">‹</button>
+
+    <div class="phone-slider-window">
+      <div class="phone-slider-track" id="collageTrack">
+        <div class="phone-slide" data-photo="photo4.jpg"><span>Фото 4</span></div>
+        <div class="phone-slide" data-photo="photo5.jpg"><span>Фото 5</span></div>
+        <div class="phone-slide" data-photo="photo6.jpg"><span>Фото 6</span></div>
+        <div class="phone-slide" data-photo="photo7.jpg"><span>Фото 7</span></div>
+        <div class="phone-slide" data-photo="photo8.jpg"><span>Фото 8</span></div>
+        <div class="phone-slide" data-photo="photo9.jpg"><span>Фото 9</span></div>
+        <div class="phone-slide" data-photo="photo10.jpg"><span>Фото 10</span></div>
+        <div class="phone-slide" data-photo="photo11.jpg"><span>Фото 11</span></div>
+      </div>
+    </div>
+
+    <button class="phone-slider-arrow phone-next" id="collageNext">›</button>
+  </div>
+
+  <div class="phone-slider-dots" id="collageDots"></div>
+
+ 
+</section>
+
+
+    <section class="section reasons-section">
+      <div class="section-title reveal">
+        <p>Маленькие причины</p>
+        <h2>Почему этот день особенный</h2>
+      </div>
+
+      <div class="reasons-grid">
+        <article class="reason reveal">
+          <span>01</span>
+          <h3>Твоя улыбка</h3>
+          <p>Она делает обычный день теплее и красивее.</p>
+        </article>
+        <article class="reason reveal delay-1">
+          <span>02</span>
+          <h3>Твоя энергия</h3>
+          <p>С тобой даже простые моменты становятся яркими.</p>
+        </article>
+        <article class="reason reveal delay-2">
+          <span>03</span>
+          <h3>Твоя доброта</h3>
+          <p>Она чувствуется в словах, поступках и мелочах.</p>
+        </article>
+        <article class="reason reveal delay-3">
+          <span>04</span>
+          <h3>Твои мечты</h3>
+          <p>Пусть каждая из них становится ближе и реальнее.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section timeline-section" id="timeline">
+      <div class="section-title reveal">
+        <p>История в моментах</p>
+        <h2>Лента воспоминаний</h2>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="dot"></div>
+          <div class="timeline-card">
+            <h3>Первый момент</h3>
+            <p>Сначала мы просто начали чаще гулять вдвоём. Без лишних планов, просто шли рядом, разговаривали обо всём, смеялись и проводили время так легко, будто это должно было случиться. С каждой прогулкой ты становилась для меня всё ближе, и в какой-то момент я понял, что уже не хочу держать это в себе. Тогда я признался тебе, что ты мне очень нравишься..</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="dot"></div>
+          <div class="timeline-card">
+            <h3>Наши моменты</h3>
+            <p>У нас было много разных дней: смешных, тёплых, спокойных, неожиданных. Иногда это были обычные прогулки, иногда простые разговоры, иногда моменты, которые вроде бы маленькие, но почему-то запоминаются сильнее всего. Именно из таких мелочей и складывается что-то по-настоящему важное.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="dot"></div>
+          <div class="timeline-card">
+            <h3>Сегодня</h3>
+            <p>Сегодня тебе 20, и это очень красивая дата. Хочется пожелать тебе больше счастья, уверенности, ярких дней, исполнения желаний и людей рядом, с которыми тебе всегда спокойно, тепло и радостно.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gallery-section" id="gallery">
+      <div class="section-title reveal">
+        <p>Ещё больше фото</p>
+        <h2>Галерея красивых моментов</h2>
+      </div>
+
+      <div class="gallery-controls reveal">
+        <button class="filter active" data-filter="all">Все</button>
+        <button class="filter" data-filter="smile">Улыбки</button>
+        <button class="filter" data-filter="memory">Воспоминания</button>
+        <button class="filter" data-filter="magic">Магия</button>
+      </div>
+
+      <div class="gallery">
+        <div class="gallery-item reveal" data-category="smile" data-photo="photo12.jpg"><span>Фото 12</span></div>
+        <div class="gallery-item reveal" data-category="memory" data-photo="photo13.jpg"><span>Фото 13</span></div>
+        <div class="gallery-item reveal" data-category="magic" data-photo="photo14.jpg"><span>Фото 14</span></div>
+        <div class="gallery-item reveal" data-category="smile" data-photo="photo15.jpg"><span>Фото 15</span></div>
+        <div class="gallery-item reveal" data-category="memory" data-photo="photo16.jpg"><span>Фото 16</span></div>
+        <div class="gallery-item reveal" data-category="magic" data-photo="photo17.jpg"><span>Фото 17</span></div>
+        <div class="gallery-item reveal" data-category="smile" data-photo="photo18.jpg"><span>Фото 18</span></div>
+        <div class="gallery-item reveal" data-category="memory" data-photo="photo19.jpg"><span>Фото 19</span></div>
+        <div class="gallery-item reveal" data-category="magic" data-photo="photo20.jpg"><span>Фото 20</span></div>
+      </div>
+    </section>
+
+    <section class="section quote-section">
+      <div class="quote-card reveal">
+        <div class="quote-mark">“</div>
+        <p>
+          Пусть в твоей жизни будет столько света, сколько звёзд на ночном небе,
+          и столько счастья, сколько невозможно сосчитать.
+        </p>
+      </div>
+    </section>
+
+    <section class="section letter-section" id="letter">
+      <div class="section-title reveal">
+        <p>Люблю тебя!</p>
+        <h2>Открытка-письмо</h2>
+      </div>
+
+      <div class="letter reveal">
+        <div class="letter-top">
+          <span>♡</span>
+          <span>20</span>
+          <span>♡</span>
+        </div>
+        <h3>Для тебя</h3>
+        <p>
+          Я хотел сделать для тебя что-то не просто красивое, а живое - место,
+          где можно оставить воспоминания, фотографии и слова, которые хочется сказать именно сегодня.
+        </p>
+        <p>
+          Пусть этот год будет про смелость, радость, новые мечты и людей,
+          рядом с которыми тебе спокойно и хорошо.
+        </p>
+        <p class="signature">С теплом, от меня ✨</p>
+      </div>
+    </section>
+
+    <section class="section cards-section">
+      <div class="section-title reveal">
+        <p>Открой карточки</p>
+        <h2>Мини-пожелания</h2>
+      </div>
+
+      <div class="flip-grid">
+        <div class="flip-card reveal">
+          <div class="flip-inner">
+            <div class="flip-front">✨</div>
+            <div class="flip-back">Пусть каждый день начинается с улыбки.</div>
+          </div>
+        </div>
+        <div class="flip-card reveal delay-1">
+          <div class="flip-inner">
+            <div class="flip-front">🌙</div>
+            <div class="flip-back">Пусть мечты становятся планами, а планы — реальностью.</div>
+          </div>
+        </div>
+        <div class="flip-card reveal delay-2">
+          <div class="flip-inner">
+            <div class="flip-front">🌸</div>
+            <div class="flip-back">Пусть вокруг будет много заботы и нежности.</div>
+          </div>
+        </div>
+        <div class="flip-card reveal delay-3">
+          <div class="flip-inner">
+            <div class="flip-front">💫</div>
+            <div class="flip-back">Пусть этот год будет самым красивым.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section music-section">
+      <div class="section-title reveal">
+        <p>Атмосфера</p>
+        <h2>Музыкальный блок</h2>
+      </div>
+
+      <div class="music-card reveal">
+        <div class="vinyl">
+          <div></div>
+        </div>
+        <div>
+          <h3>Наша песня)</h3>
+          <p>Кнопка ниже включит музыку!</p>
+          <audio id="birthdaySong" src="assets/music/song.mp3"></audio>
+          <button class="btn primary" id="musicBtn">Включить музыку</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section surprise-section" id="surprise">
+      <div class="section-title reveal">
+        <p>Финальный момент</p>
+        <h2>Сюрприз</h2>
+      </div>
+
+      <div class="surprise-box reveal">
+        <button class="gift-btn" id="giftBtn">
+          <span class="gift-lid"></span>
+          <span class="gift-body"></span>
+          <span class="gift-ribbon"></span>
+        </button>
+        <p>Нажми на подарок</p>
+      </div>
+
+      <div class="modal" id="modal">
+        <div class="modal-content">
+          <button class="modal-close" id="modalClose">×</button>
+          <h2>С Днём Рождения! 🎉</h2>
+          <p>
+            Сегодня тебе 20 - пусть эта дата станет стартом самого красивого периода.
+            Больше радости, вдохновения, любви к жизни и моментов, которые хочется повторить.
+          </p>
+          <button class="btn primary" id="confettiBtn">Запустить конфетти</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Сделано с теплом ✨ Для самого красивого дня</p>
+    <a href="#top">Вернуться наверх</a>
+  </footer>
+
+  <div class="lightbox" id="lightbox">
+    <button id="lightboxClose">×</button>
+    <img id="lightboxImg" alt="Фото" />
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
